@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-noto-sans: 'Noto Sans JP', sans-serif;
+  --font-noto-serif: 'Noto Serif JP', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #888888;
+  font-family: var(--font-noto-sans);
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer components {
+  .brand-label {
+    @apply block text-[10px] tracking-[0.4em] text-[#333] uppercase mb-8;
+  }
+
+  .brand-body {
+    @apply text-[#666] text-sm leading-[2.2] space-y-6;
+  }
+
+  .brand-divider {
+    @apply w-10 h-[1px] bg-[#2a2a2a] my-12;
+  }
+
+  .section-base {
+    @apply py-24 md:py-36 px-6 md:px-16 lg:px-24;
+  }
+}
+
+@layer utilities {
+  .animate-fadeUp {
+    animation: fadeUp 0.8s ease forwards;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 2px;
+}
