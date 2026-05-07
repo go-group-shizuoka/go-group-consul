@@ -6,7 +6,7 @@ export default function StorySection() {
     >
       {/* 背景テキスト */}
       <div
-        className="absolute top-1/2 right-0 -translate-y-1/2 text-[20vw] font-black text-white/[0.025] select-none pointer-events-none leading-none"
+        className="absolute top-1/2 right-[-2vw] -translate-y-1/2 text-[22vw] font-black text-white/[0.02] select-none pointer-events-none leading-none"
         style={{ fontFamily: '"Noto Serif JP", Georgia, serif' }}
         aria-hidden="true"
       >
@@ -20,25 +20,26 @@ export default function StorySection() {
           className="text-4xl md:text-6xl text-white leading-tight mb-14"
           style={{ fontFamily: '"Noto Serif JP", Georgia, serif' }}
         >
-          120万円。<br />
-          <span className="text-[#333]">それが、始まりの数字だった。</span>
+          軽トラック10台と、<br />
+          <span className="text-[#333]">120万円から始まった。</span>
         </h2>
 
         <div className="brand-body">
           <p>
-            施設を開いたばかりの頃、<br />
-            毎月120万円の赤字が続いた。
+            施設を立ち上げた日、<br />
+            道具を積んだ軽トラックが10台並んだ。<br />
+            手元にあったのは、120万円だけだった。
           </p>
 
           <p>
             「なぜ、正しいことをしているのに続けられないのか」<br />
-            その問いが、私を経営の世界に引き込んだ。
+            その問いが、私を経営の世界へ引き込んだ。
           </p>
 
           <p>
             マーケティング、財務、人事、組織設計。<br />
             福祉の現場で学ぶべきでないと思っていたことを、<br />
-            学ばざるを得なかった。
+            すべて独学で身につけた。
           </p>
 
           <p>
@@ -47,8 +48,7 @@ export default function StorySection() {
           </p>
         </div>
 
-        {/* 区切り */}
-        <div className="w-10 h-[1px] bg-[#2a2a2a] mt-16" />
+        <div className="w-10 h-[1px] bg-[#2a2a2a] mt-14" />
       </div>
     </section>
   );

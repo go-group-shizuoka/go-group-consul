@@ -6,6 +6,8 @@ import GoHomeMeaningSection from "@/components/sections/GoHomeMeaningSection";
 import ManagementSection from "@/components/sections/ManagementSection";
 import DXSection from "@/components/sections/DXSection";
 import TrackRecordSection from "@/components/sections/TrackRecordSection";
+import ConsultSection from "@/components/sections/ConsultSection";
+import SystemSection from "@/components/sections/SystemSection";
 import PlacesSection from "@/components/sections/PlacesSection";
 import RecruitSection from "@/components/sections/RecruitSection";
 import ContactSection from "@/components/sections/ContactSection";
@@ -27,10 +29,12 @@ export default function HomePage() {
       <ManagementSection />
       <DXSection />
       <TrackRecordSection />
+      <ConsultSection />
+      <SystemSection />
       <PlacesSection />
-      <RepresentativeSection />
       <RecruitSection />
       <ContactSection />
+      <RepresentativeSection />
     </>
   );
 }

@@ -32,8 +32,21 @@ export default function PhilosophySection() {
           </p>
         </div>
 
-        {/* アクセントライン */}
-        <div className="w-[1px] h-16 bg-gradient-to-b from-orange-500 to-transparent mt-10 ml-1" />
+        {/* 強調ブロック */}
+        <div className="mt-14 border-l border-orange-500/60 pl-5">
+          <p
+            className="text-white text-lg md:text-xl leading-relaxed"
+            style={{ fontFamily: '"Noto Serif JP", Georgia, serif' }}
+          >
+            役員は今でも、私一人です。
+          </p>
+          <p className="text-[#444] text-xs mt-2 leading-loose">
+            4施設を運営しながら、すべての責任を一人で背負っている。<br />
+            それが、私がこの仕事を続ける理由でもある。
+          </p>
+        </div>
+
+        <div className="w-[1px] h-14 bg-gradient-to-b from-orange-500/40 to-transparent mt-12 ml-1" />
       </div>
     </section>
   );
