@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -12,13 +13,34 @@ export default function Footer() {
               放課後等デイサービス・児童発達支援<br />
               静岡県内4施設運営
             </p>
-            <p className="text-[#333] text-xs leading-loose">
+            <p className="text-[#333] text-xs leading-loose mb-8">
               静岡県清水町伏見616-1 BELLSビル<br />
               TEL:{" "}
               <a href="tel:0559436111" className="hover:text-[#555] transition-colors">
                 055-943-6111
               </a>
             </p>
+            {/* 店舗サイトQR */}
+            <a
+              href="https://go-group-homepage.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 group"
+            >
+              <Image
+                src="/qr_homepage.png"
+                alt="GO GROUP 店舗サイト QRコード"
+                width={56}
+                height={56}
+                className="rounded border border-[#2a2a2a] group-hover:border-[#555] transition-colors"
+              />
+              <div>
+                <p className="text-[#333] text-[10px] tracking-wider mb-0.5">店舗サイト</p>
+                <p className="text-[#2a2a2a] text-[9px] leading-loose">
+                  保護者・ご利用者の方へ
+                </p>
+              </div>
+            </a>
           </div>
 
           {/* ナビ */}
