@@ -21,7 +21,7 @@ export default function RepresentativeSection() {
           {/* テキスト */}
           <div>
             <h2
-              className="text-3xl md:text-4xl text-white leading-tight mb-2"
+              className="text-3xl md:text-4xl text-white leading-tight mb-1"
               style={{ fontFamily: '"Noto Serif JP", Georgia, serif' }}
             >
               林 康義
@@ -29,6 +29,17 @@ export default function RepresentativeSection() {
             <p className="text-[#333] text-xs tracking-[0.3em] mb-10">
               GO GROUP 代表
             </p>
+
+            {/* 代表の言葉 */}
+            <div className="pl-4 border-l border-orange-500/50 mb-10">
+              <p
+                className="text-white text-base md:text-lg leading-relaxed"
+                style={{ fontFamily: '"Noto Serif JP", Georgia, serif' }}
+              >
+                「子どもを守るために、<br />
+                経営を本気で学んだ。」
+              </p>
+            </div>
 
             <div className="brand-body mb-12">
               <p>
@@ -40,9 +51,10 @@ export default function RepresentativeSection() {
                 経営を学ばなければならなかったからだ。
               </p>
               <p>
-                赤字でも続けられた理由は、<br />
-                使命があったからではない。<br />
-                経営を変えたからだ。
+                マーケティング、財務、組織設計。<br />
+                すべて自分で習得した。<br />
+                それが今、4施設・100名以上の子どもたちを<br />
+                支える基盤になっている。
               </p>
             </div>
 
@@ -60,6 +72,15 @@ export default function RepresentativeSection() {
                 </li>
               ))}
             </ul>
+
+            {/* 締めの言葉 */}
+            <div className="mt-12 pt-8 border-t border-[#1a1a1a]">
+              <p className="text-[#444] text-xs leading-loose">
+                福祉と経営は、対立しない。<br />
+                本物の経営があってこそ、<br />
+                子どもたちを守り続けられる。
+              </p>
+            </div>
           </div>
         </div>
       </div>

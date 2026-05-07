@@ -33,7 +33,7 @@ export default function PhilosophySection() {
         </div>
 
         {/* アクセントライン */}
-        <div className="w-[1px] h-24 bg-gradient-to-b from-orange-500 to-transparent mt-16 ml-1" />
+        <div className="w-[1px] h-16 bg-gradient-to-b from-orange-500 to-transparent mt-10 ml-1" />
       </div>
     </section>
   );

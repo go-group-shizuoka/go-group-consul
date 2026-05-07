@@ -15,27 +15,27 @@ export default function ContactSection() {
         <span className="brand-label">11 Contact</span>
 
         <h2
-          className="text-4xl md:text-5xl text-white leading-tight mb-5"
+          className="text-3xl md:text-5xl text-white leading-tight mb-4"
           style={{ fontFamily: '"Noto Serif JP", Georgia, serif' }}
         >
           話してみてください。
         </h2>
-        <p className="text-[#444] text-sm mb-16 leading-loose">
+        <p className="text-[#444] text-sm mb-14 leading-loose">
           どんな小さな相談でも、真剣に聞きます。
         </p>
 
         {/* お問い合わせ種別 */}
-        <div className="space-y-px mb-16">
+        <div className="mb-14">
           {inquiryTypes.map((type, i) => (
             <div
               key={type.label}
-              className="flex items-start gap-6 py-6 border-t border-[#1a1a1a]"
+              className="flex items-start gap-6 py-5 border-t border-[#1a1a1a] last:border-b"
             >
-              <span className="text-[#222] text-xs tracking-[0.3em] shrink-0 mt-0.5">
+              <span className="text-[#2a2a2a] text-xs tracking-[0.3em] shrink-0 mt-0.5 tabular-nums">
                 0{i + 1}
               </span>
               <div>
-                <p className="text-white text-sm mb-1">{type.label}</p>
+                <p className="text-[#aaa] text-sm mb-0.5">{type.label}</p>
                 <p className="text-[#444] text-xs leading-loose">{type.desc}</p>
               </div>
             </div>
@@ -43,28 +43,26 @@ export default function ContactSection() {
         </div>
 
         {/* 連絡先 */}
-        <div className="border border-[#1a1a1a] p-8 mb-10">
-          <p className="text-[#333] text-[10px] tracking-[0.4em] uppercase mb-6">Contact Info</p>
-          <div className="space-y-4">
+        <div className="border-t border-[#1a1a1a] pt-10 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            {/* 電話 */}
             <div>
-              <p className="text-[#444] text-xs tracking-wider mb-1">TEL</p>
+              <p className="text-[#333] text-[10px] tracking-[0.4em] uppercase mb-3">Tel</p>
               <a
                 href="tel:0559436111"
-                className="text-white text-xl tracking-wider hover:text-orange-500 transition-colors duration-300"
+                className="block text-white text-2xl tracking-widest hover:text-orange-500 transition-colors duration-300 mb-1"
               >
                 055-943-6111
               </a>
+              <p className="text-[#333] text-[10px] tracking-wider">平日 9:00〜18:00</p>
             </div>
+
+            {/* 所在地 */}
             <div>
-              <p className="text-[#444] text-xs tracking-wider mb-1">所在地</p>
-              <p className="text-[#666] text-sm leading-loose">
-                静岡県清水町伏見616-1 BELLSビル
-              </p>
-            </div>
-            <div>
-              <p className="text-[#444] text-xs tracking-wider mb-1">受付時間</p>
-              <p className="text-[#666] text-sm leading-loose">
-                平日 9:00〜18:00
+              <p className="text-[#333] text-[10px] tracking-[0.4em] uppercase mb-3">Address</p>
+              <p className="text-[#555] text-sm leading-loose">
+                静岡県清水町伏見616-1<br />
+                BELLSビル
               </p>
             </div>
           </div>
@@ -75,9 +73,10 @@ export default function ContactSection() {
           href="https://go-group-homepage.vercel.app/contact"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-3 text-white text-sm tracking-[0.2em] hover:text-orange-500 transition-colors duration-300 group border-b border-[#2a2a2a] pb-1 hover:border-orange-500"
+          className="inline-flex items-center gap-4 text-white text-sm tracking-[0.15em] hover:text-orange-500 transition-colors duration-300 group"
         >
-          <span>お問い合わせフォームはこちら</span>
+          <span className="w-8 h-[1px] bg-orange-500 group-hover:w-12 transition-all duration-300" />
+          <span>お問い合わせフォームへ</span>
           <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
         </a>
       </div>
