@@ -1,98 +1,70 @@
-﻿const career = [
-  { year: "2013", desc: "未経験から福祉業界へ" },
-  { year: "2019", desc: "GO HOME 開設（三島市）— 放課後等デイ・児童発達支援" },
-  { year: "2021", desc: "GO ROOM 開設（清水町）" },
-  { year: "2022", desc: "GO TOWN 1ST 開設（清水町）" },
-  { year: "2023", desc: "GO TOWN 2ND 開設（清水町）— 4施設体制へ" },
-  { year: "2024", desc: "経営コンサルティング事業を本格化。自社DXシステム開発開始" },
-];
+// 代表の独白 — 経歴ではなく、12年間の現場から生まれた言葉を並べる
 
 export default function RepresentativeSection() {
   return (
     <section
       id="representative"
-      className="py-32 md:py-48 px-6 md:px-16 lg:px-24 bg-[#1a1a1a] border-b border-[#262626]"
+      className="py-32 md:py-56 px-6 md:px-16 lg:px-24 bg-[#1a1a1a]"
     >
-      <div className="max-w-4xl">
-        <span className="brand-label">13 Representative</span>
+      {/* 圧倒的な余白の中に、独白だけを置く */}
+      <div className="max-w-2xl">
+        <span className="brand-label">代表の独白</span>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-start">
-          {/* テキスト */}
-          <div>
-            <h2
-              className="text-3xl md:text-4xl text-white leading-tight mb-1"
-              style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
-            >
-              林 康義
-            </h2>
-            <p className="text-[#333] text-xs tracking-[0.3em] mb-10">
-              GO GROUP 代表 / 役員
-            </p>
+        {/* キャッチコピー */}
+        <h2
+          className="text-3xl md:text-4xl text-[#f7f7f7] leading-[1.8] mb-20 md:mb-28"
+          style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
+        >
+          12年間、私はこの場所で、<br />
+          命の重さを学び続けてきました。
+        </h2>
 
-            {/* 代表の言葉 */}
-            <div className="pl-4 border-l border-orange-500/50 mb-10">
-              <p
-                className="text-white text-base md:text-lg leading-relaxed"
-                style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
-              >
-                「子どもを守るために、<br />
-                経営を本気で学んだ。」
-              </p>
-            </div>
+        {/* 独白 */}
+        <div className="space-y-12 text-[#666] text-sm leading-[2.4]"
+          style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
+        >
+          <p>
+            子どもの泣き声で目が覚めた夜が、何度もあった。<br />
+            施設が足りない。人手が足りない。お金が足りない。<br />
+            正しいことをしているはずなのに、<br />
+            正しさだけでは続かなかった。
+          </p>
 
-            <div className="brand-body mb-12">
-              <p>
-                孤独な夜が、何度もあった。<br />
-                誰にも相談できないまま、<br />
-                数字と向き合い続けた。
-              </p>
-              <p>
-                「福祉の人間が、なぜ経営を語るのか」<br />
-                そう言われるたびに、私は答えてきた。<br />
-                子どもを守り続けるためだ、と。
-              </p>
-              <p>
-                マーケティング、財務、組織設計。<br />
-                すべて独学で身につけた。<br />
-                それが今、4施設・100名以上を<br />
-                支える基盤になっている。
-              </p>
-              <p>
-                役員は、今でも私一人だ。<br />
-                それが誇りでもあり、責任でもある。
-              </p>
-            </div>
+          <p>
+            それでも、やめなかった。<br />
+            やめられなかった、というほうが正確かもしれない。
+          </p>
 
-            <div className="w-10 h-[1px] bg-[#2a2a2a]" />
-          </div>
+          <p>
+            12年間、現場に立ち続けて気づいたことがある。<br />
+            経営とは、愛情を持続させる技術だということを。<br />
+            子どもを守るには、施設を守らなければならない。<br />
+            施設を守るには、経営を学ばなければならない。<br />
+            それが、私がマーケティングや財務を独学した理由だ。
+          </p>
 
-          {/* キャリア */}
-          <div>
-            <p className="text-[#333] text-[10px] tracking-[0.4em] uppercase mb-8">Career</p>
-            <div className="space-y-px">
-              {career.map((item) => (
-                <div
-                  key={item.year}
-                  className="flex items-start gap-6 py-4 border-t border-[#262626] group"
-                >
-                  <span className="text-[#2a2a2a] text-xs tracking-[0.3em] shrink-0 tabular-nums mt-0.5 group-hover:text-orange-500 transition-colors duration-300">
-                    {item.year}
-                  </span>
-                  <span className="text-[#555] text-sm leading-loose">{item.desc}</span>
-                </div>
-              ))}
-              <div className="border-t border-[#262626]" />
-            </div>
+          <p>
+            今でも、役員は私一人だ。<br />
+            孤独な夜は、今もある。<br />
+            それでも、翌朝には現場に立つ。<br />
+            それが、私の仕事だ。
+          </p>
+        </div>
 
-            {/* 締めの言葉 */}
-            <div className="mt-10 pt-8">
-              <p className="text-[#333] text-xs leading-loose">
-                福祉と経営は、対立しない。<br />
-                本物の経営があってこそ、<br />
-                子どもたちを守り続けられる。
-              </p>
-            </div>
-          </div>
+        {/* 区切り */}
+        <div className="w-8 h-[1px] bg-orange-500/40 my-16 md:my-20" />
+
+        {/* 署名 — 最小限 */}
+        <div>
+          <p
+            className="text-[#f7f7f7] text-lg tracking-widest mb-1"
+            style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
+          >
+            林 康義
+          </p>
+          <p className="text-[#2a2a2a] text-[10px] tracking-[0.4em]">
+            GO GROUP 代表
+          </p>
         </div>
       </div>
     </section>
