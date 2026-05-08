@@ -10,6 +10,7 @@ const navLinks = [
   { label: "実績", href: "#track-record" },
   { label: "代表", href: "#representative" },
   { label: "採用", href: "#recruit" },
+  { label: "現場記録", href: "/columns", isPage: true },
 ];
 
 export default function Header() {
@@ -40,15 +41,25 @@ export default function Header() {
 
           {/* PCナビ */}
           <nav className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-[11px] tracking-[0.25em] text-[#555] hover:text-white transition-colors duration-300"
-              >
-                {link.label}
-              </a>
-            ))}
+            {navLinks.map((link) =>
+              link.isPage ? (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-[11px] tracking-[0.25em] text-[#555] hover:text-orange-500 transition-colors duration-300"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-[11px] tracking-[0.25em] text-[#555] hover:text-white transition-colors duration-300"
+                >
+                  {link.label}
+                </a>
+              )
+            )}
           </nav>
 
           {/* CTA */}
@@ -84,16 +95,27 @@ export default function Header() {
         {/* モバイルメニュー */}
         <div className={`md:hidden overflow-hidden transition-all duration-300 ${isOpen ? "max-h-screen pb-6" : "max-h-0"}`}>
           <nav className="flex flex-col gap-4 pt-4 border-t border-[#262626]">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-[11px] tracking-[0.3em] text-[#666] hover:text-white transition-colors py-1"
-                onClick={() => setIsOpen(false)}
-              >
-                {link.label}
-              </a>
-            ))}
+            {navLinks.map((link) =>
+              link.isPage ? (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-[11px] tracking-[0.3em] text-[#666] hover:text-orange-500 transition-colors py-1"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-[11px] tracking-[0.3em] text-[#666] hover:text-white transition-colors py-1"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.label}
+                </a>
+              )
+            )}
             <Link
               href="#contact"
               className="text-[11px] tracking-[0.2em] border border-[#333] text-[#888] text-center py-3 mt-2 hover:border-orange-500 hover:text-orange-500 transition-all duration-300"
