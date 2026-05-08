@@ -24,7 +24,6 @@ export default function RepresentativeSection() {
           style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
         >
           <p>
-            子どもの泣き声で目が覚めた夜が、何度もあった。<br />
             施設が足りない。人手が足りない。お金が足りない。<br />
             正しいことをしているはずなのに、<br />
             正しさだけでは続かなかった。
