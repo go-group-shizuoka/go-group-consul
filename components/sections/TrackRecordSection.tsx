@@ -1,4 +1,4 @@
-const stats = [
+﻿const stats = [
   { num: "4", unit: "施設", label: "すべて黒字運営" },
   { num: "100+", unit: "名", label: "利用者を継続支援" },
   { num: "12", unit: "年", label: "一度も赤字なし" },
@@ -18,14 +18,14 @@ export default function TrackRecordSection() {
   return (
     <section
       id="track-record"
-      className="py-24 md:py-36 px-6 md:px-16 lg:px-24 bg-[#111111] border-b border-[#1a1a1a]"
+      className="py-32 md:py-48 px-6 md:px-16 lg:px-24 bg-[#131313] border-b border-[#262626]"
     >
       <div className="max-w-5xl">
         <span className="brand-label">07 Track Record</span>
 
         <h2
           className="text-4xl md:text-5xl text-white leading-tight mb-5"
-          style={{ fontFamily: '"Noto Serif JP", Georgia, serif' }}
+          style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
         >
           数字が、続けてきた証拠だ。
         </h2>
@@ -36,11 +36,11 @@ export default function TrackRecordSection() {
         {/* 実績数字 */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-[#1a1a1a] mb-20">
           {stats.map((stat) => (
-            <div key={stat.label} className="bg-[#111111] px-5 py-10 text-center">
+            <div key={stat.label} className="bg-[#131313] px-5 py-10 text-center">
               <div className="flex items-baseline justify-center gap-0.5 mb-2">
                 <span
                   className="text-5xl md:text-6xl text-white"
-                  style={{ fontFamily: '"Noto Serif JP", Georgia, serif' }}
+                  style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
                 >
                   {stat.num}
                 </span>
@@ -56,7 +56,7 @@ export default function TrackRecordSection() {
           {milestones.map((m) => (
             <div
               key={m.year}
-              className="flex items-start gap-6 md:gap-10 py-5 border-t border-[#1a1a1a] group"
+              className="flex items-start gap-6 md:gap-10 py-5 border-t border-[#262626] group"
             >
               <span className="text-[#2a2a2a] text-xs tracking-[0.3em] shrink-0 mt-0.5 tabular-nums group-hover:text-orange-500 transition-colors duration-300">
                 {m.year}

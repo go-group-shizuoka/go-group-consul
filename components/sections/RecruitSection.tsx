@@ -1,17 +1,17 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export default function RecruitSection() {
   return (
     <section
       id="recruit"
-      className="py-24 md:py-36 px-6 md:px-16 lg:px-24 bg-[#111111] border-b border-[#1a1a1a]"
+      className="py-32 md:py-48 px-6 md:px-16 lg:px-24 bg-[#131313] border-b border-[#262626]"
     >
       <div className="max-w-3xl">
         <span className="brand-label">10 Join Us</span>
 
         <h2
           className="text-4xl md:text-6xl text-white leading-tight mb-14"
-          style={{ fontFamily: '"Noto Serif JP", Georgia, serif' }}
+          style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
         >
           綺麗な仕事ではない。<br />
           でも、本物の仕事だ。
@@ -38,7 +38,7 @@ export default function RecruitSection() {
 
         <h3
           className="text-xl md:text-2xl text-white mb-6"
-          style={{ fontFamily: '"Noto Serif JP", Georgia, serif' }}
+          style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
         >
           求めるのは、スキルより覚悟。
         </h3>

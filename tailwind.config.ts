@@ -9,14 +9,20 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ["var(--font-noto-sans)", "sans-serif"],
-        serif: ["var(--font-noto-serif)", "Georgia", "serif"],
+        serif: ["'Shippori Mincho'", "var(--font-noto-serif)", "Georgia", "serif"],
       },
       colors: {
+        // orange-500をアクセントカラー#D35400に上書き
+        orange: {
+          400: "#E05800",
+          500: "#D35400",
+          600: "#B84A00",
+        },
         brand: {
-          black: "#0a0a0a",
+          black: "#1a1a1a",
           dark: "#111111",
-          gray: "#1a1a1a",
-          orange: "#e05a00",
+          gray: "#262626",
+          orange: "#D35400",
         },
       },
       animation: {

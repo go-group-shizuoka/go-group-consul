@@ -1,4 +1,4 @@
-const inquiryTypes = [
+﻿const inquiryTypes = [
   { label: "施設見学・相談", desc: "利用を検討されている保護者の方へ" },
   { label: "経営コンサルティング", desc: "福祉事業所の経営改善を検討されている方へ" },
   { label: "メディア・取材", desc: "取材・掲載のご依頼はこちら" },
@@ -9,14 +9,14 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="py-24 md:py-36 px-6 md:px-16 lg:px-24 bg-[#0a0a0a]"
+      className="py-32 md:py-48 px-6 md:px-16 lg:px-24 bg-[#1a1a1a]"
     >
       <div className="max-w-3xl">
         <span className="brand-label">11 Contact</span>
 
         <h2
           className="text-3xl md:text-5xl text-white leading-tight mb-4"
-          style={{ fontFamily: '"Noto Serif JP", Georgia, serif' }}
+          style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
         >
           話してみてください。
         </h2>
@@ -29,7 +29,7 @@ export default function ContactSection() {
           {inquiryTypes.map((type, i) => (
             <div
               key={type.label}
-              className="flex items-start gap-6 py-5 border-t border-[#1a1a1a] last:border-b"
+              className="flex items-start gap-6 py-5 border-t border-[#262626] last:border-b"
             >
               <span className="text-[#2a2a2a] text-xs tracking-[0.3em] shrink-0 mt-0.5 tabular-nums">
                 0{i + 1}
@@ -43,7 +43,7 @@ export default function ContactSection() {
         </div>
 
         {/* 連絡先 */}
-        <div className="border-t border-[#1a1a1a] pt-10 mb-12">
+        <div className="border-t border-[#262626] pt-10 mb-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {/* 電話 */}
             <div>

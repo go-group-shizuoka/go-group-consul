@@ -1,9 +1,9 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0a0a0a] border-t border-[#1a1a1a] py-16 px-6 md:px-16 lg:px-24">
+    <footer className="bg-[#1a1a1a] border-t border-[#262626] py-16 px-6 md:px-16 lg:px-24">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           {/* ブランド */}
@@ -96,7 +96,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-[#1a1a1a] pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="border-t border-[#262626] pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-[#2a2a2a] text-xs tracking-wider">
             © 2025 GO GROUP. All rights reserved.
           </p>

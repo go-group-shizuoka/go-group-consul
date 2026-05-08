@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "プライバシーポリシー | GO GROUP",
@@ -10,14 +10,14 @@ export default function PrivacyPage() {
       <span className="brand-label">Privacy Policy</span>
       <h1
         className="text-3xl md:text-4xl text-white leading-tight mb-10"
-        style={{ fontFamily: '"Noto Serif JP", Georgia, serif' }}
+        style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
       >
         プライバシーポリシー
       </h1>
 
       <div className="brand-body space-y-10">
         <section>
-          <h2 className="text-white text-lg mb-4" style={{ fontFamily: '"Noto Serif JP", Georgia, serif' }}>
+          <h2 className="text-white text-lg mb-4" style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}>
             個人情報の取り扱いについて
           </h2>
           <p>
@@ -28,7 +28,7 @@ export default function PrivacyPage() {
         </section>
 
         <section>
-          <h2 className="text-white text-lg mb-4" style={{ fontFamily: '"Noto Serif JP", Georgia, serif' }}>
+          <h2 className="text-white text-lg mb-4" style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}>
             情報の第三者提供
           </h2>
           <p>
@@ -37,7 +37,7 @@ export default function PrivacyPage() {
         </section>
 
         <section>
-          <h2 className="text-white text-lg mb-4" style={{ fontFamily: '"Noto Serif JP", Georgia, serif' }}>
+          <h2 className="text-white text-lg mb-4" style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}>
             お問い合わせ
           </h2>
           <p>

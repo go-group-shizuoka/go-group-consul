@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
@@ -25,7 +25,7 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? "bg-[#0a0a0a]/95 backdrop-blur-sm border-b border-[#1a1a1a]" : "bg-transparent"
+        scrolled ? "bg-[#1a1a1a]/95 backdrop-blur-sm border-b border-[#262626]" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-10">
@@ -83,7 +83,7 @@ export default function Header() {
 
         {/* モバイルメニュー */}
         <div className={`md:hidden overflow-hidden transition-all duration-300 ${isOpen ? "max-h-screen pb-6" : "max-h-0"}`}>
-          <nav className="flex flex-col gap-4 pt-4 border-t border-[#1a1a1a]">
+          <nav className="flex flex-col gap-4 pt-4 border-t border-[#262626]">
             {navLinks.map((link) => (
               <a
                 key={link.href}

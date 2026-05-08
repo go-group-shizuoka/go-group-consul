@@ -1,14 +1,14 @@
-export default function GoHomeMeaningSection() {
+﻿export default function GoHomeMeaningSection() {
   return (
     <section
-      className="py-24 md:py-36 px-6 md:px-16 lg:px-24 bg-[#111111] border-b border-[#1a1a1a]"
+      className="py-32 md:py-48 px-6 md:px-16 lg:px-24 bg-[#131313] border-b border-[#262626]"
     >
       <div className="max-w-3xl">
         <span className="brand-label">03 Name</span>
 
         <h2
           className="text-4xl md:text-6xl text-white leading-tight mb-14"
-          style={{ fontFamily: '"Noto Serif JP", Georgia, serif' }}
+          style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
         >
           「GO HOME」の<br />
           意味を、考えた。
@@ -35,7 +35,7 @@ export default function GoHomeMeaningSection() {
         <div className="mt-16 pl-5 border-l border-orange-500/40">
           <p
             className="text-white text-xl md:text-2xl leading-relaxed"
-            style={{ fontFamily: '"Noto Serif JP", Georgia, serif' }}
+            style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
           >
             「行ってきます」と言える場所を、<br />
             作り続ける。

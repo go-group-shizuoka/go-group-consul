@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -24,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className="min-h-screen flex flex-col bg-[#0a0a0a]">
+      <body className="min-h-screen flex flex-col bg-[#1a1a1a]">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

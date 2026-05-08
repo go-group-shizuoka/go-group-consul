@@ -1,4 +1,4 @@
-const pillars = [
+﻿const pillars = [
   {
     num: "01",
     title: "利用者が増える導線設計",
@@ -53,14 +53,14 @@ export default function ConsultSection() {
   return (
     <section
       id="consult"
-      className="py-24 md:py-36 px-6 md:px-16 lg:px-24 bg-[#0a0a0a] border-b border-[#1a1a1a]"
+      className="py-32 md:py-48 px-6 md:px-16 lg:px-24 bg-[#1a1a1a] border-b border-[#262626]"
     >
       <div className="max-w-5xl">
         <span className="brand-label">08 Consulting</span>
 
         <h2
           className="text-4xl md:text-5xl text-white leading-tight mb-5"
-          style={{ fontFamily: '"Noto Serif JP", Georgia, serif' }}
+          style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
         >
           仕組みが、経営を守る。
         </h2>
@@ -77,7 +77,7 @@ export default function ConsultSection() {
             {pillars.map((p) => (
               <div
                 key={p.num}
-                className="flex flex-col md:flex-row md:items-start gap-4 md:gap-10 py-8 border-t border-[#1a1a1a]"
+                className="flex flex-col md:flex-row md:items-start gap-4 md:gap-10 py-8 border-t border-[#262626]"
               >
                 <span className="text-[#222] text-xs tracking-[0.3em] shrink-0 tabular-nums mt-0.5">
                   {p.num}
@@ -95,7 +95,7 @@ export default function ConsultSection() {
                 </div>
               </div>
             ))}
-            <div className="border-t border-[#1a1a1a]" />
+            <div className="border-t border-[#262626]" />
           </div>
         </div>
 
@@ -107,7 +107,7 @@ export default function ConsultSection() {
               <div
                 key={plan.name}
                 className={`px-6 py-8 relative ${
-                  plan.featured ? "bg-[#111111]" : "bg-[#0a0a0a]"
+                  plan.featured ? "bg-[#131313]" : "bg-[#1a1a1a]"
                 }`}
               >
                 {plan.featured && (
@@ -119,7 +119,7 @@ export default function ConsultSection() {
                 <p className="text-white text-base mb-1">{plan.name}</p>
                 <p
                   className="text-2xl text-white mb-4"
-                  style={{ fontFamily: '"Noto Serif JP", Georgia, serif' }}
+                  style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
                 >
                   {plan.price}
                 </p>
@@ -129,7 +129,7 @@ export default function ConsultSection() {
           </div>
 
           {/* 無料診断 */}
-          <div className="mt-12 border-t border-[#1a1a1a] pt-10">
+          <div className="mt-12 border-t border-[#262626] pt-10">
             <p className="text-[#555] text-xs leading-loose mb-6">
               まずは現状を話してください。<br />
               集客・スタッフ・経営の問題を、無料で一緒に整理します。<span className="text-[#333] ml-2">（限定5社）</span>

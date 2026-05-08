@@ -1,4 +1,4 @@
-const features = [
+﻿const features = [
   {
     id: "01",
     title: "入退室・検温記録",
@@ -35,14 +35,14 @@ export default function SystemSection() {
   return (
     <section
       id="system"
-      className="py-24 md:py-36 px-6 md:px-16 lg:px-24 bg-[#111111] border-b border-[#1a1a1a]"
+      className="py-32 md:py-48 px-6 md:px-16 lg:px-24 bg-[#131313] border-b border-[#262626]"
     >
       <div className="max-w-5xl">
         <span className="brand-label">09 System</span>
 
         <h2
           className="text-4xl md:text-5xl text-white leading-tight mb-5"
-          style={{ fontFamily: '"Noto Serif JP", Georgia, serif' }}
+          style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
         >
           現場のために、<br />
           自分たちで作った。
@@ -58,7 +58,7 @@ export default function SystemSection() {
           <p className="text-[#2a2a2a] text-[10px] tracking-[0.4em] uppercase mb-8">Features</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-[#1a1a1a]">
             {features.map((f) => (
-              <div key={f.id} className="bg-[#111111] px-6 py-7">
+              <div key={f.id} className="bg-[#131313] px-6 py-7">
                 <div className="flex items-start gap-4">
                   <span className="text-[#222] text-[10px] tracking-[0.3em] shrink-0 tabular-nums mt-0.5">
                     {f.id}
@@ -74,7 +74,7 @@ export default function SystemSection() {
         </div>
 
         {/* ステータス */}
-        <div className="border-t border-[#1a1a1a] pt-10">
+        <div className="border-t border-[#262626] pt-10">
           <div className="flex items-start gap-6">
             <div className="shrink-0 mt-1">
               <span className="inline-block w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse" />

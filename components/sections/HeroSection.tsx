@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from "react";
 
@@ -11,7 +11,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center md:items-end pt-24 pb-20 md:pb-40 px-6 md:px-16 lg:px-24 bg-[#0a0a0a] overflow-hidden">
+    <section className="relative min-h-screen flex items-center md:items-end pt-24 pb-20 md:pb-40 px-6 md:px-16 lg:px-24 bg-[#1a1a1a] overflow-hidden">
       {/* 縦線 */}
       <div className="absolute top-0 left-6 md:left-16 lg:left-24 w-[1px] h-full bg-[#1a1a1a]" />
 
@@ -31,7 +31,7 @@ export default function HeroSection() {
         {/* メインコピー */}
         <h1
           className="text-[2.6rem] sm:text-6xl md:text-7xl lg:text-8xl text-white leading-[1.2] mb-10 md:mb-14"
-          style={{ fontFamily: '"Noto Serif JP", Georgia, serif' }}
+          style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
         >
           人生、現場、<br className="hidden sm:block" />
           責任、<br />

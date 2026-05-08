@@ -1,14 +1,14 @@
-export default function DXSection() {
+﻿export default function DXSection() {
   return (
     <section
-      className="py-24 md:py-36 px-6 md:px-16 lg:px-24 bg-[#111111] border-b border-[#1a1a1a]"
+      className="py-32 md:py-48 px-6 md:px-16 lg:px-24 bg-[#131313] border-b border-[#262626]"
     >
       <div className="max-w-3xl">
         <span className="brand-label">05 DX</span>
 
         <h2
           className="text-4xl md:text-6xl text-white leading-tight mb-14"
-          style={{ fontFamily: '"Noto Serif JP", Georgia, serif' }}
+          style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
         >
           DXは、<br />
           効率化のためではない。
@@ -34,14 +34,14 @@ export default function DXSection() {
 
         {/* 対比 */}
         <div className="mt-16 grid grid-cols-2 gap-px bg-[#1a1a1a]">
-          <div className="bg-[#111111] px-6 py-8">
+          <div className="bg-[#131313] px-6 py-8">
             <p className="text-[#333] text-[10px] tracking-[0.3em] uppercase mb-3">Before</p>
             <p className="text-[#444] text-sm leading-loose">
               記録・報告書作成で<br />
               残業2〜3時間
             </p>
           </div>
-          <div className="bg-[#111111] px-6 py-8">
+          <div className="bg-[#131313] px-6 py-8">
             <p className="text-orange-500 text-[10px] tracking-[0.3em] uppercase mb-3">After</p>
             <p className="text-[#888] text-sm leading-loose">
               子どもとの時間を<br />

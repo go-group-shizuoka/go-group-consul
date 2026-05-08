@@ -1,15 +1,15 @@
-export default function PhilosophySection() {
+﻿export default function PhilosophySection() {
   return (
     <section
       id="philosophy"
-      className="py-24 md:py-36 px-6 md:px-16 lg:px-24 bg-[#0a0a0a] border-b border-[#1a1a1a]"
+      className="py-32 md:py-48 px-6 md:px-16 lg:px-24 bg-[#1a1a1a] border-b border-[#262626]"
     >
       <div className="max-w-3xl">
         <span className="brand-label">01 Philosophy</span>
 
         <h2
           className="text-4xl md:text-6xl text-white leading-tight mb-14"
-          style={{ fontFamily: '"Noto Serif JP", Georgia, serif' }}
+          style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
         >
           経営者は、孤独だ。
         </h2>
@@ -36,7 +36,7 @@ export default function PhilosophySection() {
         <div className="mt-14 border-l border-orange-500/60 pl-5">
           <p
             className="text-white text-lg md:text-xl leading-relaxed"
-            style={{ fontFamily: '"Noto Serif JP", Georgia, serif' }}
+            style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
           >
             役員は今でも、私一人です。
           </p>

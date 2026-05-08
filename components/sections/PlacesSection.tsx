@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 const facilities = [
   {
@@ -35,14 +35,14 @@ export default function PlacesSection() {
   return (
     <section
       id="facilities"
-      className="py-24 md:py-36 px-6 md:px-16 lg:px-24 bg-[#111111] border-b border-[#1a1a1a]"
+      className="py-32 md:py-48 px-6 md:px-16 lg:px-24 bg-[#131313] border-b border-[#262626]"
     >
       <div className="max-w-5xl">
         <span className="brand-label">07 Facilities</span>
 
         <h2
           className="text-4xl md:text-5xl text-white leading-tight mb-5"
-          style={{ fontFamily: '"Noto Serif JP", Georgia, serif' }}
+          style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
         >
           場所が、約束を守る。
         </h2>
