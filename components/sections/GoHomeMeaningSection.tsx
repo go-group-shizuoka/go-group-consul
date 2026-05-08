@@ -41,6 +41,16 @@
             作り続ける。
           </p>
         </div>
+
+        {/* ⑤ */}
+        <div className="mt-14 pt-10 border-t border-[#262626]">
+          <p
+            className="text-[#444] text-sm leading-relaxed"
+            style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
+          >
+            "支援"じゃない。人生で関わっている。
+          </p>
+        </div>
       </div>
     </section>
   );

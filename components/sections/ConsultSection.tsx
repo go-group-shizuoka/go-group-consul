@@ -58,6 +58,14 @@ export default function ConsultSection() {
       <div className="max-w-5xl">
         <span className="brand-label">08 Consulting</span>
 
+        {/* ⑦ リード */}
+        <p
+          className="text-[#333] text-sm tracking-wider mb-8 leading-relaxed"
+          style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
+        >
+          現場を知らない言葉は、すぐに薄くなる。
+        </p>
+
         <h2
           className="text-4xl md:text-5xl text-white leading-tight mb-5"
           style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}

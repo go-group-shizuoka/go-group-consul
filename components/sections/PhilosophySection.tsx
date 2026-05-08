@@ -46,7 +46,15 @@
           </p>
         </div>
 
-        <div className="w-[1px] h-14 bg-gradient-to-b from-orange-500/40 to-transparent mt-12 ml-1" />
+        {/* ③ */}
+        <div className="mt-16 pt-12 border-t border-[#262626]">
+          <p
+            className="text-[#333] text-base md:text-lg leading-relaxed"
+            style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
+          >
+            守ると決めたから、続けてきた。
+          </p>
+        </div>
       </div>
     </section>
   );

@@ -97,9 +97,17 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-[#262626] pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-[#2a2a2a] text-xs tracking-wider">
-            © 2025 GO GROUP. All rights reserved.
-          </p>
+          <div>
+            <p
+              className="text-[#2a2a2a] text-sm tracking-[0.4em] mb-1"
+              style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
+            >
+              静かな熱量。
+            </p>
+            <p className="text-[#1f1f1f] text-xs tracking-wider">
+              © 2025 GO GROUP. All rights reserved.
+            </p>
+          </div>
           <div className="flex gap-6">
             <Link href="/privacy" className="text-[#2a2a2a] text-xs tracking-wider hover:text-[#555] transition-colors">
               プライバシーポリシー
