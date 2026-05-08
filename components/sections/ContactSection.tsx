@@ -49,10 +49,10 @@ export default function ContactSection() {
             <div>
               <p className="text-[#333] text-[10px] tracking-[0.4em] uppercase mb-3">Tel</p>
               <a
-                href="tel:0559436111"
+                href="tel:0559395566"
                 className="block text-white text-2xl tracking-widest hover:text-orange-500 transition-colors duration-300 mb-1"
               >
-                055-943-6111
+                055-939-5566
               </a>
               <p className="text-[#333] text-[10px] tracking-wider">平日 9:00〜18:00</p>
             </div>

@@ -16,8 +16,8 @@ export default function Footer() {
             <p className="text-[#333] text-xs leading-loose mb-8">
               静岡県清水町伏見616-1 BELLSビル<br />
               TEL:{" "}
-              <a href="tel:0559436111" className="hover:text-[#555] transition-colors">
-                055-943-6111
+              <a href="tel:0559395566" className="hover:text-[#555] transition-colors">
+                055-939-5566
               </a>
             </p>
             {/* 店舗サイトQR */}

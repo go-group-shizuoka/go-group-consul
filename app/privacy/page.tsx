@@ -42,7 +42,7 @@ export default function PrivacyPage() {
           </h2>
           <p>
             個人情報に関するお問い合わせは、下記までご連絡ください。<br />
-            TEL: 055-943-6111（平日9:00〜18:00）
+            TEL: 055-939-5566（平日9:00〜18:00）
           </p>
         </section>
       </div>
