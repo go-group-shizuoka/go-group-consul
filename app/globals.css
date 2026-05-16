@@ -58,6 +58,29 @@ body {
   }
 }
 
+/* ======================================================
+   スクロール浮き出しアニメーション
+   .will-reveal  → 初期状態（薄く、少し下にずれた状態）
+   .is-revealed  → 表示状態（ゆっくり明るく浮き上がる）
+   ScrollReveal.tsx の IntersectionObserver がクラスを切替える
+   ====================================================== */
+.will-reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 1.4s ease-out, transform 1.4s ease-out;
+}
+
+.will-reveal.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* brand-body 内の <p> は親要素に will-reveal が付くので
+   個別に delay をずらすと自然に見える */
+.brand-body.will-reveal {
+  transition-delay: 0.1s;
+}
+
 ::-webkit-scrollbar {
   width: 4px;
 }

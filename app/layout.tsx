@@ -2,6 +2,7 @@
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "GO GROUP | 経営と福祉の本質を問う",
@@ -26,6 +27,7 @@ export default function RootLayout({
     <html lang="ja">
       <body className="min-h-screen flex flex-col bg-[#1a1a1a]">
         <Header />
+        <ScrollReveal />
         <main className="flex-1">{children}</main>
         <Footer />
       </body>
