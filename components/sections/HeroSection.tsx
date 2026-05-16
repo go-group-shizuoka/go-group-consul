@@ -45,13 +45,13 @@ export default function HeroSection() {
 
         {/* メインコピー */}
         <h1
-          className="text-[2.4rem] sm:text-5xl md:text-6xl lg:text-7xl text-white leading-[1.5] mb-8"
+          className="text-[2rem] sm:text-4xl md:text-5xl lg:text-6xl text-white leading-[1.7] mb-8 flex flex-wrap"
           style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
         >
           {headlineWords.map((word, i) => (
             <span
               key={i}
-              className={`inline-block transition-all duration-1000 ease-out mr-[0.1em] ${
+              className={`inline-block transition-all duration-1000 ease-out mr-[0.05em] ${
                 wordVisible[i] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
               } ${word.accent ? "text-orange-500" : ""}`}
             >

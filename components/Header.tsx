@@ -1,7 +1,8 @@
-﻿"use client";
+"use client";
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 
 const navLinks = [
   { label: "理念", href: "#philosophy" },
@@ -16,12 +17,33 @@ const navLinks = [
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // アンカーリンクのクリック処理
+  // ホームページにいる場合はスムーズスクロール、他ページにいる場合はホームへ遷移
+  const handleAnchorClick = (e: React.MouseEvent, href: string) => {
+    e.preventDefault();
+    setIsOpen(false);
+    const id = href.replace("#", "");
+    if (pathname === "/") {
+      // ホームページ: スムーズスクロール
+      const el = document.getElementById(id);
+      if (el) {
+        const top = el.getBoundingClientRect().top + window.scrollY - 80;
+        window.scrollTo({ top, behavior: "smooth" });
+      }
+    } else {
+      // 他のページ: ホームへ遷移してからスクロール
+      router.push("/#" + id);
+    }
+  };
 
   return (
     <header
@@ -54,6 +76,7 @@ export default function Header() {
                 <a
                   key={link.href}
                   href={link.href}
+                  onClick={(e) => handleAnchorClick(e, link.href)}
                   className="text-[11px] tracking-[0.25em] text-[#555] hover:text-white transition-colors duration-300"
                 >
                   {link.label}
@@ -72,12 +95,13 @@ export default function Header() {
             >
               店舗サイト →
             </a>
-            <Link
+            <a
               href="#contact"
+              onClick={(e) => handleAnchorClick(e, "#contact")}
               className="text-[11px] tracking-[0.2em] border border-[#333] text-[#888] hover:border-orange-500 hover:text-orange-500 px-5 py-2.5 transition-all duration-300"
             >
               お問い合わせ
-            </Link>
+            </a>
           </div>
 
           {/* ハンバーガー */}
@@ -109,20 +133,20 @@ export default function Header() {
                 <a
                   key={link.href}
                   href={link.href}
+                  onClick={(e) => handleAnchorClick(e, link.href)}
                   className="text-[11px] tracking-[0.3em] text-[#666] hover:text-white transition-colors py-1"
-                  onClick={() => setIsOpen(false)}
                 >
                   {link.label}
                 </a>
               )
             )}
-            <Link
+            <a
               href="#contact"
+              onClick={(e) => handleAnchorClick(e, "#contact")}
               className="text-[11px] tracking-[0.2em] border border-[#333] text-[#888] text-center py-3 mt-2 hover:border-orange-500 hover:text-orange-500 transition-all duration-300"
-              onClick={() => setIsOpen(false)}
             >
               お問い合わせ
-            </Link>
+            </a>
           </nav>
         </div>
       </div>
