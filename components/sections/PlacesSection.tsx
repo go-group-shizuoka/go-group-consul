@@ -61,24 +61,29 @@ export default function PlacesSection() {
               className="group flex flex-col md:flex-row md:items-start gap-4 md:gap-10 py-8 border-t border-[#1e1e1e] hover:border-[#2a2a2a] transition-colors duration-300 block"
             >
               {/* Number */}
-              <span className="text-[#222] text-xs tracking-[0.3em] shrink-0 mt-1">
+              <span className="text-[#666] md:text-[#222] text-xs tracking-[0.3em] shrink-0 mt-1">
                 0{i + 1}
               </span>
 
               {/* Content */}
               <div className="flex-1">
                 <div className="flex flex-col md:flex-row md:items-baseline gap-1 md:gap-4 mb-2">
+                  {/* ④ タイトル（GO HOME等）はオレンジ維持 */}
                   <p className="text-orange-500 text-xs tracking-[0.25em] uppercase">
                     {facility.name}
                   </p>
-                  <p className="text-[#444] text-[10px] tracking-wider">
+                  <p className="text-[#aaa] md:text-[#444] text-[10px] tracking-wider">
                     {facility.address}
                   </p>
                 </div>
-                <p className="text-[#333] text-[11px] tracking-wider mb-3">
+                {/* ③ サービス種別 */}
+                <p className="text-[#aaa] md:text-[#333] text-[11px] tracking-wider mb-3">
                   {facility.type}
                 </p>
-                <p className="text-[#555] text-sm leading-loose">{facility.desc}</p>
+                {/* ③ 説明文：モバイルで明るく・太く・行間広く */}
+                <p className="text-[#d8d8d8] md:text-[#555] text-sm font-medium md:font-normal leading-[1.85] md:leading-loose">
+                  {facility.desc}
+                </p>
               </div>
 
               {/* Arrow */}

@@ -81,6 +81,22 @@ body {
   transition-delay: 0.1s;
 }
 
+/* ======================================================
+   モバイル視認性改善（@max-width:768px）
+   PCデザインには影響なし
+   ====================================================== */
+@media (max-width: 768px) {
+  /* ① 本文（brand-body）を明るく */
+  .brand-body {
+    color: rgba(255, 255, 255, 0.82);
+  }
+
+  /* brand-label を少し明るく */
+  .brand-label {
+    color: #5a5a5a;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 4px;
 }
