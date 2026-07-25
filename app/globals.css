@@ -59,58 +59,53 @@ body {
 }
 
 /* ======================================================
-   スクロール浮き出しアニメーション（要素種別ごとに調整）
-   「最初から読める状態で、自然に存在感が増していく」演出
-   ======================================================
-
-   【キャッチコピー h2】
-   初期 opacity:0 → 1  /  1.3s  /  translateY(16px)
-   ページの軸となる言葉。しっかり浮き出す。
-
-   【見出し h3・brand-label】
-   初期 opacity:0.45 → 1  /  0.9s  /  translateY(10px)
-   最初から薄く読める。自然に存在感が増す。
-
-   【本文 brand-body・reveal-item】
-   初期 opacity:0.75 → 1  /  0.7s  /  translateY(5px)
-   ほぼ見えていて、スムーズに定着する。
+   スクロール浮き出しアニメーション
+   方針：「最初から読める状態で、自然に存在感が増す」
+   ・opacityは最低0.82以上（読めない状態を作らない）
+   ・blur + translateY を主演出に使用
    ====================================================== */
 
-/* ── キャッチコピー（h2）────────────────── */
+/* ── キャッチコピー（h2）── opacity:0.85 + blur(2px) */
 h2.will-reveal {
-  opacity: 0;
-  transform: translateY(16px);
-  transition: opacity 1.3s ease-out, transform 1.3s ease-out;
+  opacity: 0.85;
+  transform: translateY(14px);
+  filter: blur(2px);
+  transition: transform 0.9s ease-out, filter 0.9s ease-out, opacity 0.9s ease-out;
 }
 h2.will-reveal.is-revealed {
   opacity: 1;
   transform: translateY(0);
+  filter: blur(0px);
 }
 
-/* ── 見出し（h3・brand-label）────────────── */
+/* ── 見出し（h3・brand-label）── opacity:0.82 + blur(1.5px) */
 h3.will-reveal,
 .brand-label.will-reveal {
-  opacity: 0.45;
+  opacity: 0.82;
   transform: translateY(10px);
-  transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+  filter: blur(1.5px);
+  transition: transform 0.9s ease-out, filter 0.9s ease-out, opacity 0.9s ease-out;
 }
 h3.will-reveal.is-revealed,
 .brand-label.will-reveal.is-revealed {
   opacity: 1;
   transform: translateY(0);
+  filter: blur(0px);
 }
 
-/* ── 本文（brand-body・reveal-item）─────── */
+/* ── 本文（brand-body・reveal-item）── opacity:0.85 + blur(1px) */
 .brand-body.will-reveal,
 .reveal-item.will-reveal {
-  opacity: 0.75;
-  transform: translateY(5px);
-  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  opacity: 0.85;
+  transform: translateY(6px);
+  filter: blur(1px);
+  transition: transform 0.9s ease-out, filter 0.9s ease-out, opacity 0.9s ease-out;
 }
 .brand-body.will-reveal.is-revealed,
 .reveal-item.will-reveal.is-revealed {
   opacity: 1;
   transform: translateY(0);
+  filter: blur(0px);
 }
 
 /* ======================================================
@@ -123,9 +118,9 @@ h3.will-reveal.is-revealed,
     color: rgba(255, 255, 255, 0.82);
   }
 
-  /* brand-label を少し明るく */
+  /* 3. セクション番号・英字ラベル */
   .brand-label {
-    color: #5a5a5a;
+    color: rgba(255, 255, 255, 0.42);
   }
 }
 

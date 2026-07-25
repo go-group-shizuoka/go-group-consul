@@ -36,7 +36,7 @@ export default function HeroSection() {
       <div className="relative max-w-4xl">
         {/* ラベル */}
         <span
-          className={`block text-[9px] tracking-[0.55em] text-[#2a2a2a] uppercase mb-16 md:mb-24 transition-all duration-1000 ${
+          className={`block text-[9px] tracking-[0.55em] text-[rgba(255,255,255,0.42)] md:text-[#2a2a2a] uppercase mb-16 md:mb-24 transition-all duration-1000 ${
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
@@ -71,7 +71,7 @@ export default function HeroSection() {
 
         {/* サブコピー */}
         <p
-          className={`text-[#3a3a3a] text-sm md:text-base leading-[2.4] max-w-md mb-16 transition-all duration-1000 delay-[2600ms] ${
+          className={`text-[rgba(255,255,255,0.62)] md:text-[#3a3a3a] text-sm md:text-base leading-[2.4] max-w-md mb-16 transition-all duration-1000 delay-[2600ms] ${
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
           style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
@@ -92,7 +92,7 @@ export default function HeroSection() {
           ].map((s) => (
             <div key={s.note} className="flex items-baseline gap-2">
               <span className="text-[#f7f7f7] text-sm font-medium tracking-wider">{s.num}</span>
-              <span className="text-[#2a2a2a] text-[10px] tracking-wider">{s.note}</span>
+              <span className="text-[rgba(255,255,255,0.58)] md:text-[#2a2a2a] text-[10px] tracking-wider">{s.note}</span>
             </div>
           ))}
         </div>
@@ -112,7 +112,7 @@ export default function HeroSection() {
           </a>
           <a
             href="/statement"
-            className="text-[#2a2a2a] text-xs tracking-[0.2em] hover:text-[#f7f7f7] transition-colors duration-300 border-b border-[#262626] pb-0.5 hover:border-[#444]"
+            className="text-[rgba(255,255,255,0.62)] md:text-[#2a2a2a] text-xs tracking-[0.2em] hover:text-[#f7f7f7] transition-colors duration-300 border-b border-[#333] md:border-[#262626] pb-0.5 hover:border-[#444]"
           >
             GO GROUPについて
           </a>
