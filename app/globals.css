@@ -4,10 +4,51 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ======================================================
+   デザイントークン（サイト全体共通）
+   ここを変えれば全ページの文字色が一括で変わります
+   ====================================================== */
 :root {
   --font-noto-sans: 'Noto Sans JP', sans-serif;
   --font-noto-serif: 'Noto Serif JP', serif;
   --font-shippori: 'Shippori Mincho', 'Noto Serif JP', serif;
+
+  /* 見出し */
+  --heading-primary: rgba(255, 255, 255, 0.97);
+  --heading-secondary: rgba(255, 255, 255, 0.84);
+
+  /* 本文・補足 */
+  --text-primary: rgba(255, 255, 255, 0.90);
+  --text-secondary: rgba(255, 255, 255, 0.72);
+  --text-muted: rgba(255, 255, 255, 0.56);
+  --text-caption: rgba(255, 255, 255, 0.42);
+  --text-faint: rgba(255, 255, 255, 0.30);
+
+  /* アクセント */
+  --accent: #D35400;
+
+  /* 罫線 */
+  --border-subtle: #262626;
+  --border-strong: #3a3a3a;
+
+  /* 行間 */
+  --leading-body: 2.2;
+  --leading-read: 2.6;
+}
+
+/* モバイルは全体的に少し明るく（可読性優先） */
+@media (max-width: 768px) {
+  :root {
+    --heading-primary: rgba(255, 255, 255, 0.98);
+    --heading-secondary: rgba(255, 255, 255, 0.90);
+    --text-primary: rgba(255, 255, 255, 0.94);
+    --text-secondary: rgba(255, 255, 255, 0.80);
+    --text-muted: rgba(255, 255, 255, 0.64);
+    --text-caption: rgba(255, 255, 255, 0.50);
+    --text-faint: rgba(255, 255, 255, 0.38);
+    --border-subtle: #2e2e2e;
+    --border-strong: #454545;
+  }
 }
 
 html {
@@ -16,7 +57,7 @@ html {
 
 body {
   background-color: #1a1a1a;
-  color: #888888;
+  color: var(--text-secondary);
   font-family: var(--font-noto-sans);
   line-height: 2.0;
   -webkit-font-smoothing: antialiased;
@@ -24,15 +65,26 @@ body {
 
 @layer components {
   .brand-label {
-    @apply block text-[10px] tracking-[0.4em] text-[#3a3a3a] uppercase mb-8;
+    @apply block text-[10px] tracking-[0.4em] uppercase mb-8;
+    color: var(--text-caption);
   }
 
   .brand-body {
-    @apply text-[#777] text-sm leading-[2.2] space-y-6;
+    @apply text-sm space-y-6;
+    color: var(--text-secondary);
+    line-height: var(--leading-body);
+  }
+
+  /* コラム本文など、じっくり読ませる文章 */
+  .brand-read {
+    @apply text-sm space-y-10;
+    color: var(--text-secondary);
+    line-height: var(--leading-read);
   }
 
   .brand-divider {
-    @apply w-10 h-[1px] bg-[#2a2a2a] my-12;
+    @apply w-10 h-[1px] my-12;
+    background-color: var(--border-strong);
   }
 
   /* セクション基本余白（1.5倍〜2倍） */
@@ -106,22 +158,6 @@ h3.will-reveal.is-revealed,
   opacity: 1;
   transform: translateY(0);
   filter: blur(0px);
-}
-
-/* ======================================================
-   モバイル視認性改善（@max-width:768px）
-   PCデザインには影響なし
-   ====================================================== */
-@media (max-width: 768px) {
-  /* ① 本文（brand-body）を明るく */
-  .brand-body {
-    color: rgba(255, 255, 255, 0.82);
-  }
-
-  /* 3. セクション番号・英字ラベル */
-  .brand-label {
-    color: rgba(255, 255, 255, 0.42);
-  }
 }
 
 ::-webkit-scrollbar {

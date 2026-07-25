@@ -8,15 +8,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           {/* ブランド */}
           <div>
-            <p className="text-white text-sm tracking-[0.3em] font-light mb-6">GO GROUP</p>
-            <p className="text-[#444] text-xs leading-loose mb-6">
+            <p className="text-heading text-sm tracking-[0.3em] font-light mb-6">GO GROUP</p>
+            <p className="text-secondary text-xs leading-loose mb-6">
               放課後等デイサービス・児童発達支援<br />
               静岡県内4施設運営
             </p>
-            <p className="text-[#333] text-xs leading-loose mb-8">
+            <p className="text-muted text-xs leading-loose mb-8">
               静岡県清水町伏見616-1 BELLSビル<br />
               TEL:{" "}
-              <a href="tel:0559395566" className="hover:text-[#555] transition-colors">
+              <a href="tel:0559395566" className="hover:text-orange-500 transition-colors">
                 055-939-5566
               </a>
             </p>
@@ -32,11 +32,11 @@ export default function Footer() {
                 alt="GO GROUP 店舗サイト QRコード"
                 width={56}
                 height={56}
-                className="rounded border border-[#2a2a2a] group-hover:border-[#555] transition-colors"
+                className="rounded border border-line group-hover:border-line-strong transition-colors"
               />
               <div>
-                <p className="text-[#333] text-[10px] tracking-wider mb-0.5">店舗サイト</p>
-                <p className="text-[#2a2a2a] text-[9px] leading-loose">
+                <p className="text-muted text-[10px] tracking-wider mb-0.5">店舗サイト</p>
+                <p className="text-caption text-[9px] leading-loose">
                   保護者・ご利用者の方へ
                 </p>
               </div>
@@ -45,7 +45,7 @@ export default function Footer() {
 
           {/* ナビ */}
           <div>
-            <p className="text-[#333] text-[10px] tracking-[0.4em] uppercase mb-6">Navigation</p>
+            <p className="text-caption text-[10px] tracking-[0.4em] uppercase mb-6">Navigation</p>
             <ul className="space-y-3">
               {[
                 { label: "理念", href: "#philosophy" },
@@ -59,7 +59,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-[#444] text-xs tracking-wider hover:text-white transition-colors duration-300"
+                    className="text-secondary text-xs tracking-wider hover:text-heading transition-colors duration-300"
                   >
                     {link.label}
                   </a>
@@ -70,7 +70,7 @@ export default function Footer() {
 
           {/* 施設 */}
           <div>
-            <p className="text-[#333] text-[10px] tracking-[0.4em] uppercase mb-6">Facilities</p>
+            <p className="text-caption text-[10px] tracking-[0.4em] uppercase mb-6">Facilities</p>
             <ul className="space-y-3">
               {[
                 { name: "GO HOME", desc: "多機能型・三島市" },
@@ -85,10 +85,10 @@ export default function Footer() {
                     rel="noopener noreferrer"
                     className="group"
                   >
-                    <span className="text-[#555] text-xs tracking-wider group-hover:text-white transition-colors duration-300">
+                    <span className="text-secondary text-xs tracking-wider group-hover:text-heading transition-colors duration-300">
                       {f.name}
                     </span>
-                    <span className="block text-[#333] text-[10px] mt-0.5">{f.desc}</span>
+                    <span className="block text-muted text-[10px] mt-0.5">{f.desc}</span>
                   </a>
                 </li>
               ))}
@@ -96,27 +96,27 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-[#262626] pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="border-t border-line pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <div>
             <p
-              className="text-[#2a2a2a] text-sm tracking-[0.4em] mb-1"
+              className="text-caption text-sm tracking-[0.4em] mb-1"
               style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
             >
               静かな熱量。
             </p>
-            <p className="text-[#1f1f1f] text-xs tracking-wider">
+            <p className="text-faint text-xs tracking-wider">
               © 2025 GO GROUP. All rights reserved.
             </p>
           </div>
           <div className="flex gap-6">
-            <Link href="/privacy" className="text-[#2a2a2a] text-xs tracking-wider hover:text-[#555] transition-colors">
+            <Link href="/privacy" className="text-caption text-xs tracking-wider hover:text-heading transition-colors">
               プライバシーポリシー
             </Link>
             <a
               href="https://go-group-homepage.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#2a2a2a] text-xs tracking-wider hover:text-[#555] transition-colors"
+              className="text-caption text-xs tracking-wider hover:text-heading transition-colors"
             >
               店舗サイト
             </a>

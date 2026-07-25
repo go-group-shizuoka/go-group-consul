@@ -39,9 +39,9 @@
         </div>
 
         {/* ② */}
-        <div className="mt-16 pt-12 border-t border-[#262626]">
+        <div className="mt-16 pt-12 border-t border-line">
           <p
-            className="text-[#555] text-base md:text-lg leading-relaxed"
+            className="text-heading-secondary text-base md:text-lg leading-relaxed"
             style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
           >
             綺麗ごとだけでは、12年続けられない。

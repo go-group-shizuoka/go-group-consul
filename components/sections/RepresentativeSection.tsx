@@ -12,7 +12,7 @@ export default function RepresentativeSection() {
 
         {/* キャッチコピー */}
         <h2
-          className="text-3xl md:text-4xl text-[#f7f7f7] leading-[1.8] mb-20 md:mb-28"
+          className="text-3xl md:text-4xl text-heading leading-[1.8] mb-20 md:mb-28"
           style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
         >
           12年間、私はこの場所で、<br />
@@ -20,7 +20,7 @@ export default function RepresentativeSection() {
         </h2>
 
         {/* 独白 */}
-        <div className="space-y-12 text-[#666] text-sm leading-[2.4]"
+        <div className="space-y-12 text-secondary text-sm leading-[2.4]"
           style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
         >
           <p>
@@ -56,12 +56,12 @@ export default function RepresentativeSection() {
         {/* 署名 — 最小限 */}
         <div>
           <p
-            className="text-[#f7f7f7] text-lg tracking-widest mb-1"
+            className="text-heading text-lg tracking-widest mb-1"
             style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
           >
             林 康義
           </p>
-          <p className="text-[#2a2a2a] text-[10px] tracking-[0.4em]">
+          <p className="text-caption text-[10px] tracking-[0.4em]">
             GO GROUP 代表
           </p>
         </div>

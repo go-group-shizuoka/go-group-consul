@@ -34,7 +34,7 @@ export default function RecruitSection() {
         </div>
 
         {/* Divider */}
-        <div className="w-10 h-[1px] bg-[#2a2a2a] mb-14" />
+        <div className="w-10 h-[1px] bg-line-strong mb-14" />
 
         <h3
           className="text-xl md:text-2xl text-white mb-6"

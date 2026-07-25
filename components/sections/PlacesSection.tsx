@@ -46,7 +46,7 @@ export default function PlacesSection() {
         >
           場所が、約束を守る。
         </h2>
-        <p className="text-[#444] text-sm mb-16 leading-loose">
+        <p className="text-secondary text-sm mb-16 leading-loose">
           静岡県三島市・清水町を中心に4施設を展開。
         </p>
 
@@ -58,10 +58,10 @@ export default function PlacesSection() {
               href={facility.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex flex-col md:flex-row md:items-start gap-4 md:gap-10 py-8 border-t border-[#1e1e1e] hover:border-[#2a2a2a] transition-colors duration-300 block"
+              className="group flex flex-col md:flex-row md:items-start gap-4 md:gap-10 py-8 border-t border-line hover:border-line-strong transition-colors duration-300 block"
             >
               {/* Number */}
-              <span className="text-[#666] md:text-[#222] text-xs tracking-[0.3em] shrink-0 mt-1">
+              <span className="text-faint text-xs tracking-[0.3em] shrink-0 mt-1">
                 0{i + 1}
               </span>
 
@@ -72,22 +72,22 @@ export default function PlacesSection() {
                   <p className="text-orange-500 text-xs tracking-[0.25em] uppercase">
                     {facility.name}
                   </p>
-                  <p className="text-[#aaa] md:text-[#444] text-[10px] tracking-wider">
+                  <p className="text-caption text-[10px] tracking-wider">
                     {facility.address}
                   </p>
                 </div>
                 {/* ③ サービス種別 */}
-                <p className="text-[#aaa] md:text-[#333] text-[11px] tracking-wider mb-3">
+                <p className="text-muted text-[11px] tracking-wider mb-3">
                   {facility.type}
                 </p>
-                {/* ③ 説明文：モバイルで明るく・太く・行間広く */}
-                <p className="text-[#d8d8d8] md:text-[#555] text-sm font-medium md:font-normal leading-[1.85] md:leading-loose">
+                {/* ③ 説明文 */}
+                <p className="text-secondary text-sm leading-[1.95]">
                   {facility.desc}
                 </p>
               </div>
 
               {/* Arrow */}
-              <span className="text-[#333] text-xs group-hover:text-orange-500 transition-colors duration-300 mt-1 shrink-0">
+              <span className="text-faint text-xs group-hover:text-orange-500 transition-colors duration-300 mt-1 shrink-0">
                 →
               </span>
             </a>

@@ -21,7 +21,7 @@
           style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
         >
           軽トラック10台と、<br />
-          <span className="text-[#333]">120万円から始まった。</span>
+          <span className="text-heading-secondary">120万円から始まった。</span>
         </h2>
 
         <div className="brand-body">
@@ -48,7 +48,7 @@
           </p>
         </div>
 
-        <div className="w-10 h-[1px] bg-[#2a2a2a] mt-14" />
+        <div className="w-10 h-[1px] bg-line-strong mt-14" />
       </div>
     </section>
   );

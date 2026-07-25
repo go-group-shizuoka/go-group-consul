@@ -90,7 +90,7 @@ export default function Header() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="text-[11px] tracking-[0.25em] text-[#555] hover:text-orange-500 transition-colors duration-300"
+                    className="text-[11px] tracking-[0.25em] text-muted hover:text-orange-500 transition-colors duration-300"
                   >
                     {link.label}
                   </Link>
@@ -99,7 +99,7 @@ export default function Header() {
                     key={link.href}
                     href={link.href}
                     onClick={(e) => handleAnchorClick(e, link.href)}
-                    className="text-[11px] tracking-[0.25em] text-[#555] hover:text-white transition-colors duration-300"
+                    className="text-[11px] tracking-[0.25em] text-muted hover:text-heading transition-colors duration-300"
                   >
                     {link.label}
                   </a>
@@ -113,14 +113,14 @@ export default function Header() {
                 href="https://go-group-homepage.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[11px] tracking-[0.2em] text-[#444] hover:text-orange-500 transition-colors duration-300"
+                className="text-[11px] tracking-[0.2em] text-caption hover:text-orange-500 transition-colors duration-300"
               >
                 店舗サイト →
               </a>
               <a
                 href="#contact"
                 onClick={(e) => handleAnchorClick(e, "#contact")}
-                className="text-[11px] tracking-[0.2em] border border-[#333] text-[#888] hover:border-orange-500 hover:text-orange-500 px-5 py-2.5 transition-all duration-300"
+                className="text-[11px] tracking-[0.2em] border border-line-strong text-secondary hover:border-orange-500 hover:text-orange-500 px-5 py-2.5 transition-all duration-300"
               >
                 お問い合わせ
               </a>
@@ -176,7 +176,7 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-[12px] tracking-[0.35em] text-[#bdbdbd] hover:text-orange-500 transition-colors duration-300 py-1"
+                  className="text-[12px] tracking-[0.35em] text-primary hover:text-orange-500 transition-colors duration-300 py-1"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}
@@ -186,7 +186,7 @@ export default function Header() {
                   key={link.href}
                   href={link.href}
                   onClick={(e) => handleAnchorClick(e, link.href)}
-                  className="text-[12px] tracking-[0.35em] text-[#bdbdbd] hover:text-white transition-colors duration-300 py-1"
+                  className="text-[12px] tracking-[0.35em] text-primary hover:text-heading transition-colors duration-300 py-1"
                 >
                   {link.label}
                 </a>
@@ -196,7 +196,7 @@ export default function Header() {
             <a
               href="#contact"
               onClick={(e) => handleAnchorClick(e, "#contact")}
-              className="text-[11px] tracking-[0.25em] border border-[#333] text-[#bdbdbd] text-center py-4 mt-4 hover:border-orange-500 hover:text-orange-500 transition-all duration-300"
+              className="text-[11px] tracking-[0.25em] border border-line-strong text-primary text-center py-4 mt-4 hover:border-orange-500 hover:text-orange-500 transition-all duration-300"
             >
               お問い合わせ
             </a>

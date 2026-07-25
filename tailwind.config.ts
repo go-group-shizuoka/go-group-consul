@@ -12,6 +12,20 @@ const config: Config = {
         serif: ["'Shippori Mincho'", "var(--font-noto-serif)", "Georgia", "serif"],
       },
       colors: {
+        // デザイントークン（globals.css の CSS Variables を参照）
+        primary: "var(--text-primary)",
+        secondary: "var(--text-secondary)",
+        muted: "var(--text-muted)",
+        caption: "var(--text-caption)",
+        faint: "var(--text-faint)",
+        heading: {
+          DEFAULT: "var(--heading-primary)",
+          secondary: "var(--heading-secondary)",
+        },
+        line: {
+          DEFAULT: "var(--border-subtle)",
+          strong: "var(--border-strong)",
+        },
         // orange-500をアクセントカラー#D35400に上書き
         orange: {
           400: "#E05800",

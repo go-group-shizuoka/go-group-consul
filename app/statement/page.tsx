@@ -14,14 +14,14 @@ export default function StatementPage() {
         {/* 戻るリンク — 最小限 */}
         <Link
           href="/"
-          className="inline-block text-[9px] tracking-[0.5em] text-[#222] uppercase mb-24 hover:text-[#444] transition-colors duration-500"
+          className="inline-block text-[9px] tracking-[0.5em] text-caption uppercase mb-24 hover:text-orange-500 transition-colors duration-500"
         >
           ← GO GROUP
         </Link>
 
         {/* 第一層 — メインコピー */}
         <h1
-          className="text-3xl md:text-5xl lg:text-6xl text-[#f7f7f7] leading-[1.6] mb-16"
+          className="text-3xl md:text-5xl lg:text-6xl text-heading leading-[1.6] mb-16"
           style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
         >
           あなたは、<br />
@@ -38,7 +38,7 @@ export default function StatementPage() {
 
         {/* 第三層 — 現場の言葉 */}
         <div
-          className="space-y-8 text-[#444] text-sm leading-[2.6] mb-24"
+          className="space-y-8 text-primary text-sm leading-[2.6] mb-24"
           style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
         >
           <p>綺麗ごとだけでは、12年続けられない。</p>
@@ -51,7 +51,7 @@ export default function StatementPage() {
 
         {/* 本文 */}
         <div
-          className="space-y-8 text-[#333] text-xs leading-[2.6] max-w-md"
+          className="space-y-8 text-secondary text-xs leading-[2.6] max-w-md"
           style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
         >
           <p>
@@ -69,19 +69,19 @@ export default function StatementPage() {
         <div className="mt-24 flex flex-col sm:flex-row gap-6 items-start">
           <Link
             href="/#philosophy"
-            className="text-[#2a2a2a] text-[10px] tracking-[0.3em] hover:text-[#f7f7f7] transition-colors duration-300"
+            className="text-muted text-[10px] tracking-[0.3em] hover:text-heading transition-colors duration-300"
           >
             理念を読む →
           </Link>
           <Link
             href="/columns"
-            className="text-[#2a2a2a] text-[10px] tracking-[0.3em] hover:text-orange-500 transition-colors duration-300"
+            className="text-muted text-[10px] tracking-[0.3em] hover:text-orange-500 transition-colors duration-300"
           >
             現場記録を読む →
           </Link>
           <Link
             href="/#contact"
-            className="text-[#2a2a2a] text-[10px] tracking-[0.3em] hover:text-[#f7f7f7] transition-colors duration-300"
+            className="text-muted text-[10px] tracking-[0.3em] hover:text-heading transition-colors duration-300"
           >
             相談する →
           </Link>

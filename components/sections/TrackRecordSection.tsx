@@ -29,7 +29,7 @@ export default function TrackRecordSection() {
         >
           数字が、続けてきた証拠だ。
         </h2>
-        <p className="text-[#444] text-sm mb-16 leading-loose">
+        <p className="text-secondary text-sm mb-16 leading-loose">
           一度も赤字を出さずに、4施設を運営し続けている。
         </p>
 
@@ -46,7 +46,7 @@ export default function TrackRecordSection() {
                 </span>
                 <span className="text-orange-500 text-sm ml-0.5">{stat.unit}</span>
               </div>
-              <p className="text-[#3a3a3a] text-[10px] tracking-[0.25em] leading-relaxed">{stat.label}</p>
+              <p className="text-muted text-[10px] tracking-[0.25em] leading-relaxed">{stat.label}</p>
             </div>
           ))}
         </div>
@@ -56,12 +56,12 @@ export default function TrackRecordSection() {
           {milestones.map((m) => (
             <div
               key={m.year}
-              className="flex items-start gap-6 md:gap-10 py-5 border-t border-[#262626] group"
+              className="flex items-start gap-6 md:gap-10 py-5 border-t border-line group"
             >
-              <span className="text-[#2a2a2a] text-xs tracking-[0.3em] shrink-0 mt-0.5 tabular-nums group-hover:text-orange-500 transition-colors duration-300">
+              <span className="text-caption text-xs tracking-[0.3em] shrink-0 mt-0.5 tabular-nums group-hover:text-orange-500 transition-colors duration-300">
                 {m.year}
               </span>
-              <span className="text-[#555] text-sm leading-loose">{m.event}</span>
+              <span className="text-secondary text-sm leading-loose">{m.event}</span>
             </div>
           ))}
         </div>

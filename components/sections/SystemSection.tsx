@@ -47,7 +47,7 @@ export default function SystemSection() {
           現場のために、<br />
           自分たちで作った。
         </h2>
-        <p className="text-[#444] text-sm mb-16 leading-loose max-w-xl">
+        <p className="text-secondary text-sm mb-16 leading-loose max-w-xl">
           既製品では、現場の実態に合わなかった。<br />
           だから、GO GROUPの業務フローをそのままシステムにした。<br />
           HUGではなく、自分たちの言葉で動くシステムを。
@@ -55,17 +55,17 @@ export default function SystemSection() {
 
         {/* 機能一覧 */}
         <div className="mb-16">
-          <p className="text-[#2a2a2a] text-[10px] tracking-[0.4em] uppercase mb-8">Features</p>
+          <p className="text-caption text-[10px] tracking-[0.4em] uppercase mb-8">Features</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-[#1a1a1a]">
             {features.map((f) => (
               <div key={f.id} className="bg-[#131313] px-6 py-7">
                 <div className="flex items-start gap-4">
-                  <span className="text-[#222] text-[10px] tracking-[0.3em] shrink-0 tabular-nums mt-0.5">
+                  <span className="text-faint text-[10px] tracking-[0.3em] shrink-0 tabular-nums mt-0.5">
                     {f.id}
                   </span>
                   <div>
-                    <p className="text-white text-sm mb-1.5">{f.title}</p>
-                    <p className="text-[#444] text-xs leading-loose">{f.desc}</p>
+                    <p className="text-heading text-sm mb-1.5">{f.title}</p>
+                    <p className="text-secondary text-xs leading-loose">{f.desc}</p>
                   </div>
                 </div>
               </div>
@@ -74,16 +74,16 @@ export default function SystemSection() {
         </div>
 
         {/* ステータス */}
-        <div className="border-t border-[#262626] pt-10">
+        <div className="border-t border-line pt-10">
           <div className="flex items-start gap-6">
             <div className="shrink-0 mt-1">
               <span className="inline-block w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse" />
             </div>
             <div>
-              <p className="text-[#555] text-xs leading-loose mb-1">
+              <p className="text-primary text-xs leading-loose mb-1">
                 現在、自社開発中。2024年より着手。
               </p>
-              <p className="text-[#333] text-[10px] leading-loose tracking-wider">
+              <p className="text-muted text-[10px] leading-loose tracking-wider">
                 コンサルティング契約者への優先提供を予定しています。
               </p>
             </div>

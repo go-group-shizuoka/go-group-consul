@@ -40,16 +40,16 @@
           >
             役員は今でも、私一人です。
           </p>
-          <p className="text-[#666] text-xs mt-2 leading-loose">
+          <p className="text-muted text-xs mt-2 leading-loose">
             4施設を運営しながら、すべての責任を一人で背負っている。<br />
             それが、私がこの仕事を続ける理由でもある。
           </p>
         </div>
 
         {/* ③ */}
-        <div className="mt-16 pt-12 border-t border-[#262626]">
+        <div className="mt-16 pt-12 border-t border-line">
           <p
-            className="text-[#666] text-base md:text-lg leading-relaxed"
+            className="text-heading-secondary text-base md:text-lg leading-relaxed"
             style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
           >
             守ると決めたから、続けてきた。

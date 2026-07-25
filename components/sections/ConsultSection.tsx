@@ -60,7 +60,7 @@ export default function ConsultSection() {
 
         {/* ⑦ リード */}
         <p
-          className="text-[#333] text-sm tracking-wider mb-8 leading-relaxed"
+          className="text-heading-secondary text-sm tracking-wider mb-8 leading-relaxed"
           style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
         >
           現場を知らない言葉は、すぐに薄くなる。
@@ -72,7 +72,7 @@ export default function ConsultSection() {
         >
           仕組みが、経営を守る。
         </h2>
-        <p className="text-[#444] text-sm mb-16 leading-loose max-w-xl">
+        <p className="text-secondary text-sm mb-16 leading-loose max-w-xl">
           「頑張っているのに、うまくいかない」<br />
           その原因は、たいてい仕組みにある。<br />
           GO GROUPが12年かけて現場から作り上げた仕組みを、そのまま導入する。
@@ -80,19 +80,19 @@ export default function ConsultSection() {
 
         {/* 4つの柱 */}
         <div className="mb-20">
-          <p className="text-[#2a2a2a] text-[10px] tracking-[0.4em] uppercase mb-8">Four Pillars</p>
+          <p className="text-caption text-[10px] tracking-[0.4em] uppercase mb-8">Four Pillars</p>
           <div className="space-y-px">
             {pillars.map((p) => (
               <div
                 key={p.num}
-                className="flex flex-col md:flex-row md:items-start gap-4 md:gap-10 py-8 border-t border-[#262626]"
+                className="flex flex-col md:flex-row md:items-start gap-4 md:gap-10 py-8 border-t border-line"
               >
-                <span className="text-[#222] text-xs tracking-[0.3em] shrink-0 tabular-nums mt-0.5">
+                <span className="text-faint text-xs tracking-[0.3em] shrink-0 tabular-nums mt-0.5">
                   {p.num}
                 </span>
                 <div className="flex-1">
-                  <p className="text-white text-sm mb-2">{p.title}</p>
-                  <p className="text-[#444] text-xs leading-[2]">
+                  <p className="text-heading text-sm mb-2">{p.title}</p>
+                  <p className="text-secondary text-xs leading-[2]">
                     {p.desc.split("\n").map((line, i) => (
                       <span key={i}>
                         {line}
@@ -103,13 +103,13 @@ export default function ConsultSection() {
                 </div>
               </div>
             ))}
-            <div className="border-t border-[#262626]" />
+            <div className="border-t border-line" />
           </div>
         </div>
 
         {/* プラン */}
         <div>
-          <p className="text-[#2a2a2a] text-[10px] tracking-[0.4em] uppercase mb-8">Plan</p>
+          <p className="text-caption text-[10px] tracking-[0.4em] uppercase mb-8">Plan</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-[#1a1a1a]">
             {plans.map((plan) => (
               <div
@@ -123,24 +123,24 @@ export default function ConsultSection() {
                     most popular
                   </span>
                 )}
-                <p className="text-[#333] text-[10px] tracking-wider mb-1">{plan.freq}</p>
-                <p className="text-white text-base mb-1">{plan.name}</p>
+                <p className="text-caption text-[10px] tracking-wider mb-1">{plan.freq}</p>
+                <p className="text-heading text-base mb-1">{plan.name}</p>
                 <p
-                  className="text-2xl text-white mb-4"
+                  className="text-2xl text-heading mb-4"
                   style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
                 >
                   {plan.price}
                 </p>
-                <p className="text-[#444] text-xs leading-loose">{plan.desc}</p>
+                <p className="text-secondary text-xs leading-loose">{plan.desc}</p>
               </div>
             ))}
           </div>
 
           {/* 無料診断 */}
-          <div className="mt-12 border-t border-[#262626] pt-10">
-            <p className="text-[#555] text-xs leading-loose mb-6">
+          <div className="mt-12 border-t border-line pt-10">
+            <p className="text-primary text-xs leading-loose mb-6">
               まずは現状を話してください。<br />
-              集客・スタッフ・経営の問題を、無料で一緒に整理します。<span className="text-[#333] ml-2">（限定5社）</span>
+              集客・スタッフ・経営の問題を、無料で一緒に整理します。<span className="text-muted ml-2">（限定5社）</span>
             </p>
             <a
               href="#contact"

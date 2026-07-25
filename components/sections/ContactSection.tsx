@@ -20,7 +20,7 @@ export default function ContactSection() {
         >
           話してみてください。
         </h2>
-        <p className="text-[#444] text-sm mb-14 leading-loose">
+        <p className="text-secondary text-sm mb-14 leading-loose">
           どんな小さな相談でも、真剣に聞きます。
         </p>
 
@@ -29,38 +29,38 @@ export default function ContactSection() {
           {inquiryTypes.map((type, i) => (
             <div
               key={type.label}
-              className="flex items-start gap-6 py-5 border-t border-[#262626] last:border-b"
+              className="flex items-start gap-6 py-5 border-t border-line last:border-b"
             >
-              <span className="text-[#2a2a2a] text-xs tracking-[0.3em] shrink-0 mt-0.5 tabular-nums">
+              <span className="text-faint text-xs tracking-[0.3em] shrink-0 mt-0.5 tabular-nums">
                 0{i + 1}
               </span>
               <div>
-                <p className="text-[#aaa] text-sm mb-0.5">{type.label}</p>
-                <p className="text-[#444] text-xs leading-loose">{type.desc}</p>
+                <p className="text-primary text-sm mb-0.5">{type.label}</p>
+                <p className="text-secondary text-xs leading-loose">{type.desc}</p>
               </div>
             </div>
           ))}
         </div>
 
         {/* 連絡先 */}
-        <div className="border-t border-[#262626] pt-10 mb-12">
+        <div className="border-t border-line pt-10 mb-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {/* 電話 */}
             <div>
-              <p className="text-[#333] text-[10px] tracking-[0.4em] uppercase mb-3">Tel</p>
+              <p className="text-caption text-[10px] tracking-[0.4em] uppercase mb-3">Tel</p>
               <a
                 href="tel:0559395566"
-                className="block text-white text-2xl tracking-widest hover:text-orange-500 transition-colors duration-300 mb-1"
+                className="block text-heading text-2xl tracking-widest hover:text-orange-500 transition-colors duration-300 mb-1"
               >
                 055-939-5566
               </a>
-              <p className="text-[#333] text-[10px] tracking-wider">平日 9:00〜18:00</p>
+              <p className="text-muted text-[10px] tracking-wider">平日 9:00〜18:00</p>
             </div>
 
             {/* 所在地 */}
             <div>
-              <p className="text-[#333] text-[10px] tracking-[0.4em] uppercase mb-3">Address</p>
-              <p className="text-[#555] text-sm leading-loose">
+              <p className="text-caption text-[10px] tracking-[0.4em] uppercase mb-3">Address</p>
+              <p className="text-secondary text-sm leading-loose">
                 静岡県清水町伏見616-1<br />
                 BELLSビル
               </p>

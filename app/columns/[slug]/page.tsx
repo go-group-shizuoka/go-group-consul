@@ -60,7 +60,7 @@ export default async function ColumnPage({
           {/* 戻るリンク */}
           <Link
             href="/columns"
-            className="inline-block text-[9px] tracking-[0.5em] text-[#2a2a2a] uppercase mb-16 hover:text-orange-500 transition-colors duration-300"
+            className="inline-block text-[9px] tracking-[0.5em] text-caption uppercase mb-16 hover:text-orange-500 transition-colors duration-300"
           >
             ← 現場記録
           </Link>
@@ -72,18 +72,17 @@ export default async function ColumnPage({
 
           {/* タイトル */}
           <h1
-            className="text-2xl md:text-3xl text-[#f7f7f7] leading-[1.8] mb-16 md:mb-20"
+            className="text-2xl md:text-3xl text-heading leading-[1.8] mb-16 md:mb-20"
             style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
           >
             {col.title}
           </h1>
 
           {/* 本文 — 段落ごとに余白大きめ */}
-          <div className="space-y-10">
+          <div className="brand-read">
             {col.body.map((paragraph, i) => (
               <p
                 key={i}
-                className="text-[#666] text-sm leading-[2.6]"
                 style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
               >
                 {paragraph.split("\n").map((line, j) => (
@@ -97,8 +96,8 @@ export default async function ColumnPage({
           </div>
 
           {/* 署名 */}
-          <div className="mt-20 pt-12 border-t border-[#262626]">
-            <p className="text-[#2a2a2a] text-[10px] tracking-[0.4em]">
+          <div className="mt-20 pt-12 border-t border-line">
+            <p className="text-caption text-[10px] tracking-[0.4em]">
               林 康義 — GO GROUP
             </p>
           </div>
