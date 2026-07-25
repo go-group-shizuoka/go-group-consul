@@ -59,26 +59,58 @@ body {
 }
 
 /* ======================================================
-   スクロール浮き出しアニメーション
-   .will-reveal  → 初期状態（薄く、少し下にずれた状態）
-   .is-revealed  → 表示状態（ゆっくり明るく浮き上がる）
-   ScrollReveal.tsx の IntersectionObserver がクラスを切替える
-   ====================================================== */
-.will-reveal {
-  opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 1.4s ease-out, transform 1.4s ease-out;
-}
+   スクロール浮き出しアニメーション（要素種別ごとに調整）
+   「最初から読める状態で、自然に存在感が増していく」演出
+   ======================================================
 
-.will-reveal.is-revealed {
+   【キャッチコピー h2】
+   初期 opacity:0 → 1  /  1.3s  /  translateY(16px)
+   ページの軸となる言葉。しっかり浮き出す。
+
+   【見出し h3・brand-label】
+   初期 opacity:0.45 → 1  /  0.9s  /  translateY(10px)
+   最初から薄く読める。自然に存在感が増す。
+
+   【本文 brand-body・reveal-item】
+   初期 opacity:0.75 → 1  /  0.7s  /  translateY(5px)
+   ほぼ見えていて、スムーズに定着する。
+   ====================================================== */
+
+/* ── キャッチコピー（h2）────────────────── */
+h2.will-reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 1.3s ease-out, transform 1.3s ease-out;
+}
+h2.will-reveal.is-revealed {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* brand-body 内の <p> は親要素に will-reveal が付くので
-   個別に delay をずらすと自然に見える */
-.brand-body.will-reveal {
-  transition-delay: 0.1s;
+/* ── 見出し（h3・brand-label）────────────── */
+h3.will-reveal,
+.brand-label.will-reveal {
+  opacity: 0.45;
+  transform: translateY(10px);
+  transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+h3.will-reveal.is-revealed,
+.brand-label.will-reveal.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── 本文（brand-body・reveal-item）─────── */
+.brand-body.will-reveal,
+.reveal-item.will-reveal {
+  opacity: 0.75;
+  transform: translateY(5px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.brand-body.will-reveal.is-revealed,
+.reveal-item.will-reveal.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* ======================================================
