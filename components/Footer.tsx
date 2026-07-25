@@ -104,7 +104,7 @@ export default function Footer() {
             >
               静かな熱量。
             </p>
-            <p className="text-faint text-xs tracking-wider">
+            <p className="text-caption text-xs tracking-wider">
               © 2025 GO GROUP. All rights reserved.
             </p>
           </div>
