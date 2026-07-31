@@ -239,7 +239,7 @@ export const columns: Column[] = [
   },
   {
     slug: "20260725-busy-vs-growing",
-    date: "2026.07.25",
+    date: "2026.07.19",
     title: "「忙しい社長」と「成長する社長」の違い",
     lead: "「毎日忙しい。」多くの経営者から、この言葉を耳にします。",
     body: [
