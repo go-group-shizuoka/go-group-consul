@@ -9,6 +9,23 @@ export async function generateStaticParams() {
   return columns.map((col) => ({ slug: col.slug }));
 }
 
+// 原稿の記法を表示に変換する
+// **〜** → 強調（改行をまたいでもOK）／ \n → 改行
+function renderParagraph(paragraph: string) {
+  return paragraph.split(/(\*\*[\s\S]+?\*\*)/g).map((part, k) => {
+    const isBold = part.startsWith("**") && part.endsWith("**") && part.length > 4;
+    const text = isBold ? part.slice(2, -2) : part;
+    const lines = text.split("\n");
+    const content = lines.map((line, j) => (
+      <span key={j}>
+        {line}
+        {j < lines.length - 1 && <br />}
+      </span>
+    ));
+    return isBold ? <strong key={k}>{content}</strong> : <span key={k}>{content}</span>;
+  });
+}
+
 // ページごとのメタデータ
 export async function generateMetadata({
   params,
@@ -85,12 +102,7 @@ export default async function ColumnPage({
                 key={i}
                 style={{ fontFamily: '"Shippori Mincho", "Noto Serif JP", Georgia, serif' }}
               >
-                {paragraph.split("\n").map((line, j) => (
-                  <span key={j}>
-                    {line}
-                    {j < paragraph.split("\n").length - 1 && <br />}
-                  </span>
-                ))}
+                {renderParagraph(paragraph)}
               </p>
             ))}
           </div>

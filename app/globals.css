@@ -82,6 +82,12 @@ body {
     line-height: var(--leading-read);
   }
 
+  /* 原稿の **強調** — 本文より一段明るくして浮かせる */
+  .brand-read strong {
+    color: var(--heading-primary);
+    font-weight: 500;
+  }
+
   .brand-divider {
     @apply w-10 h-[1px] my-12;
     background-color: var(--border-strong);
